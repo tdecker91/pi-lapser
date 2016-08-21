@@ -44,3 +44,7 @@ command=python web-server.py
 autostart=true
 autorestart=false
 ```
+
+## Making the time lapse
+
+All of the images are saved in the snapshots directory. You can complete the time lapse using image magick to make a gif or something like mencoder to make a video file
