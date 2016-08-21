@@ -22,7 +22,7 @@ Edit the pi-lapser.ini file to change any defaults.
 |Setting|Description|
 |---|---|
 |port|the port the webserver front end listens on|
-|autostart|true if you want to immediately start taking pictures when starting the pi-lapser|
+|autostart|true if you want to immediately start taking pictures when starting pi-lapser|
 |interval|time in seconds in between each picture|
 |width|horizontal size of the pictures|
 |height|vertical size of the picture|
