@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Pi Lapser</title>
+		<style>
+			#status {
+				width: 500px;
+			}
+
+			table {
+				border-collapse: collapse;
+				margin: 5px;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+			}
+
+			td {
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pi Lapser</h1>
+
+		<a href="/snapshotter/start">start</a>
+		<a href="/snapshotter/stop">stop</a>
+		<div id="status">
+			<table>
+				<tr>
+					<td>Status</td>
+					<td>
+						{% if snapping %}
+							<span style="color:green">RUNNING</span>
+						{% else %}
+							<span style="color:red">STOPPED</span>
+						{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td>Interval</td>
+					<td>{{ interval }} seconds</td>
+				</tr>
+				<tr>
+					<td>Next</td>
+					<td>{{ next }}</td>
+				</tr>
+			</table>
+		</div>
+		<a href="/snapshots">Snaphots</a>
+	</body>
+</html>
